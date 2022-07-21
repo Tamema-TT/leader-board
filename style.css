@@ -1,10 +1,12 @@
 /* fonts */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
 
 /* common styles */
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #F3F1FF;
+    padding-bottom: 28px;
 }
 
 main {
@@ -26,6 +28,61 @@ hr {
     margin-bottom: 30px;
 }
 
+/* Nav bar style */
+.navigation {
+    height: 94px;
+    background-color: #562EFF;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.nav-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 920px;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logo-image {
+    width: 40.42px;
+    height: 51px;
+    margin-right: 15px;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.logo-text {
+    font-size: 24px;
+    font-weight: 500;
+    color: #FFFFFF;
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.links a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    color: #FFFFFF;
+    margin-left: 36px;
+}
 /* top players style */
 .top-players {
     margin-bottom: 30px;
@@ -85,6 +142,7 @@ hr {
 .blog-author {
     font-size: 16px;
     color: #9F9F9F;
+    font-weight: 400;
 }
 
 .blog-author a {
@@ -101,10 +159,15 @@ hr {
 }
 
 .course {
+    font-family: 'Roboto', sans-serif;
     width: 253px;
     height: 270px;
     border-radius: 13px;
-    /* border: 2px solid red; */
+    padding-top: 13px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    filter: drop-shadow(5px 5.34229px 13.3557px rgba(0, 0, 0, 0.05));
 }
 
 .courses .banner img {
@@ -112,20 +175,28 @@ hr {
     height: 104px;
 }
 
+.course-detail {
+    margin-left: 12px;
+}
+
 .course-title {
     font-size: 20px;
     margin-top: 19px;
     margin-bottom: 7px;
+    color: #1E1E1E;
 }
 
 .course-author {
     font-size: 14px;
+    font-weight: 400;
+    margin: 0;
+    color: #ED6B4F;
 }
 
 .course-info {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    margin-top: 13px;
 }
 
 .fa-star {
@@ -161,6 +232,7 @@ hr {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    margin-left: 25px;
 }
 
 /* Media Queries */
